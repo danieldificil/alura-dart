@@ -8,11 +8,11 @@ void main() {
   String nome = 'Daniel';
   String apelido = ' xchuck';
 
-
-  String frase = 'Eu sou o $apelido,\n'
-      ' meu nome é $nome, \n'
-      ' tenho $age anos. \n'
-      ' Eu me considero geek? $geek';
+  List<dynamic> listaDois= [28, 28.6, true, 'Daniel', 'xchuck'];
+  String frase = 'Eu sou o ${listaDois[4]},\n'
+      ' meu nome é ${listaDois[3]}, \n'
+      ' tenho ${listaDois[0]} anos. \n'
+      ' Eu me considero geek? ${listaDois[2]}';
 
   // print(frase);
 
@@ -21,6 +21,6 @@ void main() {
   String nome3 = 'Maria';
 
   List<String> listaNome = ['Daniel', 'Francini'];
-  List<dynamic> listaDois= [28];
-  print(listaNome.length);
+
+  print(frase);
 }
